@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Game> renders correctly 1`] = `<MockLoadingSpinner />`;
+
+exports[`<Game> should render component 1`] = `
+<div
+  className="d-flex justify-content-center align-items-center vh-100"
+>
+  <div
+    className="spinner-border text-primary"
+    role="status"
+  >
+    <span
+      className="visually-hidden"
+    >
+      Loading...
+    </span>
+  </div>
+</div>
+`;
