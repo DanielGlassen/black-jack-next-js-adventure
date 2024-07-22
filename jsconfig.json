@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"],
+			"@/firebase/*": ["config/firebase*"]
+		}
+	},
+	"exclude": ["node_modules"]
+}

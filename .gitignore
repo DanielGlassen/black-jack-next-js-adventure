@@ -44,5 +44,3 @@ yarn-error.log*
 # ignore build logs
 /build.log
 
-# ignore user-specific JS config
-/jsconfig.json
