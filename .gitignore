@@ -31,16 +31,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# ignore generated asset files
-/public/workbox-*.js
-/public/workbox-*.js.map
-
 # ignore Vercel specific files
 /public/vercel.svg
-
-# ignore compiled styles
-/styles/global.scss
-/styles/globals.css
 
 # ignore IDE settings (add more as needed)
 .idea/
