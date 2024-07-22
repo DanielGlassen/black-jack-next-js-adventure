@@ -44,3 +44,5 @@ yarn-error.log*
 # ignore build logs
 /build.log
 
+# ignore dist logs
+/dist

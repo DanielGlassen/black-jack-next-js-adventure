@@ -15,8 +15,7 @@ const firebaseConfig = {
 	storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
 	messagingSenderId: process.env.NEXT_PUBLIC_MESSAGE_SENDER_ID,
 	appId: process.env.NEXT_PUBLIC_APP_ID
-  };
-  
+};
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
