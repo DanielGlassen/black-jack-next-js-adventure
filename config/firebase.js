@@ -9,13 +9,14 @@ import {
 import { getDatabase, ref, set, get } from 'firebase/database';
 
 const firebaseConfig = {
-	apiKey: process.env.NEXT_PUBLIC_Firebase_API_Key,
-	authDomain: process.env.NEXT_PUBLIC_Auth_Domain,
-	projectId: process.env.NEXT_PUBLIC_Project_Id,
-	storageBucket: process.env.NEXT_PUBLIC_Storage_Bucket,
-	messagingSenderId: process.env.NEXT_PUBLIC_Message_Sender_Id,
-	appId: process.env.NEXT_PUBLIC_App_Id
-};
+	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+	authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+	projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+	storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+	messagingSenderId: process.env.NEXT_PUBLIC_MESSAGE_SENDER_ID,
+	appId: process.env.NEXT_PUBLIC_APP_ID
+  };
+  
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

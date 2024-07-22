@@ -14,12 +14,12 @@ jest.mock('firebase/database', () => ({
 	getDatabase: jest.fn()
 }));
 
-process.env.NEXT_PUBLIC_Firebase_API_Key = 'test-api-key';
-process.env.NEXT_PUBLIC_Auth_Domain = 'test-auth-domain';
-process.env.NEXT_PUBLIC_Project_Id = 'test-project-id';
-process.env.NEXT_PUBLIC_Storage_Bucket = 'test-storage-bucket';
-process.env.NEXT_PUBLIC_Message_Sender_Id = 'test-message-sender-id';
-process.env.NEXT_PUBLIC_App_Id = 'test-app-id';
+process.env.NEXT_PUBLIC_FIREBASE_API_KEY = 'test-api-key',
+process.env.NEXT_PUBLIC_AUTH_DOMAIN = 'test-auth-domain',
+process.env.NEXT_PUBLIC_PROJECT_ID = 'test-project-id',
+process.env.NEXT_PUBLIC_STORAGE_BUCKET = 'test-storage-bucket',
+process.env.NEXT_PUBLIC_MESSAGE_SENDER_ID = 'test-message-sender-id',
+process.env.NEXT_PUBLIC_APP_ID =  'test-app-id',
 
 describe('<Game>', () => {
 	it('should render component', () => {
