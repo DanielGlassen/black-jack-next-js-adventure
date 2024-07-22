@@ -96,8 +96,9 @@ const Game = () => {
 		if (gamePhase === 'stand' && dealerHand.length === 2) {
 			determineResult();
 		}
-	}, [dealerHand, gamePhase]);
+	}, [dealerHand, gamePhase, deckId, handleGameEnd, playerHand]);
 
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	const handleGameEnd = async (result, isBj = false) => {
 		if (result === null) {
 			return;

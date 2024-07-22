@@ -22,7 +22,7 @@ export default function Home() {
 		});
 
 		return () => unsubscribe();
-	}, []);
+	}, [auth, setUser]);
 
 	const handleLogout = () => {
 		signOut(auth)

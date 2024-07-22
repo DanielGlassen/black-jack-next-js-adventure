@@ -61,20 +61,26 @@ const Login = () => {
 			});
 	};
 
-	const authListener = () => {
-		onAuthStateChanged(auth, (user) => {
-			if (user) {
-				setPassword('');
-				setUser(user);
-			} else {
-				setUser('');
-			}
-		});
-	};
-
 	useEffect(() => {
-		authListener();
-	}, []);
+		const authListener = () => {
+			const unsubscribe = onAuthStateChanged(auth, (user) => {
+				if (user) {
+					setPassword('');
+					setUser(user);
+				} else {
+					setUser('');
+				}
+			});
+			return unsubscribe; // Clean up subscription on unmount
+		};
+
+		const unsubscribe = authListener();
+
+		// Cleanup function to unsubscribe from the auth listener
+		return () => {
+			if (unsubscribe) unsubscribe();
+		};
+	}, [auth, setUser, setPassword]); // Include dependencies used inside useEffect
 
 	return (
 		<>

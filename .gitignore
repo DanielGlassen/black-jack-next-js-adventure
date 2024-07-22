@@ -52,8 +52,5 @@ yarn-error.log*
 # ignore build logs
 /build.log
 
-# ignore firebase config (add more if needed)
-/config/firebase.js
-
 # ignore user-specific JS config
 /jsconfig.json

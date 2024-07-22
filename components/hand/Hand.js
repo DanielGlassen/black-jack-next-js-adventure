@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../card/Card';
+import './Hand.css'; // Import the CSS file
 
 const Hand = ({ hand, isDealer, showDealerCards }) => {
 	return (
@@ -11,13 +12,6 @@ const Hand = ({ hand, isDealer, showDealerCards }) => {
 					hidden={index === 0 && isDealer && !showDealerCards}
 				/>
 			))}
-			<style jsx>{`
-				.hand-container {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-			`}</style>
 		</div>
 	);
 };

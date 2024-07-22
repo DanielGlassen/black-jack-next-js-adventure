@@ -2,15 +2,14 @@ import React from 'react';
 import LoadingSpinner from '../loadingSpinner/LoadingSpinner';
 
 const Player = ({ playerId, balance, bet, loading }) => {
+	const containerStyle = {
+		textAlign: 'center',
+		marginBottom: '20px'
+	};
+
 	return (
-		<div className="player-container">
+		<div style={containerStyle}>
 			{loading ? <LoadingSpinner /> : <p>Balance: ${balance}</p>}
-			<style jsx>{`
-				.player-container {
-					text-align: center;
-					margin-bottom: 20px;
-				}
-			`}</style>
 		</div>
 	);
 };
