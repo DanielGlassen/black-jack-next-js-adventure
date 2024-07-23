@@ -38,5 +38,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./out  # Ensure this matches the directory where static files are output
           publish_branch: gh-pages
